@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"> <!--indica el idioma-->
+<head>
+    <meta charset="UTF-8"> <!-- indica el abecedario-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML</title> <!-- cambia el titulo de la pestaña-->
+</head>
+<body>
+    <h1> Titulo Principal</h1>
+    <h2> H2</h2>
+    <h3> H3</h3>
+    <h4> H4</h4>
+    <h5> H5</h5>
+    <h6> H6</h6>
+
+    <p> parrafo - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, labore iusto nam, deserunt animi nostrum sunt veritatis 
+        voluptatum asperiores architecto officia eveniet quibusdam odio eius delectus aspernatur ab harum vel.</p>
+
+    <a href="http://google.com"> enlace </a> <!-- href  "la pagin a la que vamos a redirigir a l usuario"; dentro de la etiqueta podemos tener mas etiquetas -->   
+    
+    <p>
+        Etiqueta <strong> strong</strong> y etiqueta <em> enfasis</em>
+    </p>
+
+    <h2> Lista desordenada </h2>
+    <ul>
+        <li>frutas</li>
+        <li>Verduras</li>
+        <li>Carne</li>
+    </ul>
+
+    <h2> Lista ordenada</h2>
+    <ol>
+        <li> Frutas</li>
+        <li> Verduras</li>
+        <li> Carne</li>
+    </ol>
+
+    <table> 
+        <thead>
+            <tr>
+                <th> Titulo 1</th>
+                <th> Titulo 2</th>
+                <th> Titulo 3</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+                <td> Columna 2.1</td>
+                <td> Columna 2.2</td>
+                <td> Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="imagenes/gatito.jpg" alt="imagen de Gatito">
+
+    <!-- ETIQUETA MÁS IMPORTANTE-->
+    <div> <!-- BLOQUE O CAJA -->
+        <p> Párrafo </p>
+    </div>
+
+    <!--FORMULARIOS-->
+    <form action="/accion" method="post" >
+        <div>
+            <label for="input_texto">Nombre</label>
+            <input type="text" name="input_texto" id="input_texto"> 
+        </div>
+        <div>
+            <label for="input_numeral">Número</label>
+            <input type="number" name="input_numeral" id="input_numeral">
+        </div>
+        <div>
+            <label for="input_contra">Contraseña</label>
+            <input type="password" name="input_contra" id="input_contra">
+        </div>
+        <div>
+            <label for="input_fecha">Fecha</label>
+            <input type="date" name="input_fecha" id="input_fecha">
+        </div>
+        <div>
+            <input type="radio" name="estado_civil" value="casado" id="input_casado" >
+            <label for="input_casado">Casado</label> <br>
+
+            <input type="radio" name="estado_civil" value="soltero" id="input_soltero">
+            <label for="input_soltero">Soltero</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mayor_edad" id="input_edad">
+            <label for="input_edad">¿Es mayor de edad?</label>
+        </div>
+        <div>
+            <textarea id="imput_textarea" name="comentario" cols="20" rows="3"></textarea> <!--cols columnas y rows filas-->
+        </div>
+        <div>
+            <select name="comida_preferida" >
+                <option>Lasaña</option>
+                <option>Verduras</option>
+                <option>Carne</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+    <header>
+
+    </header>
+    <section>
+    </section>    
+    <footer>
+
+    </footer>    
+
+    
+</body>
+</html>
