@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a HTML</title> <!-- cambia el titulo de la pestaña-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+    <!-- Html sigifica Lenguaje de marcado de Hipertexto; 
+        la finalidad es permitirnos comunicar con el navegador el significado del contenido que deseamos colocar en una página web.-->
 <body>
-    <h1> Titulo Principal</h1>
-    <h2> H2</h2>
-    <h3> H3</h3>
+    <h1 id="h1_id"> Titulo Principal</h1>
+    <h2 class="red"> H2</h2>
+    <h3 class="azul"> H3</h3>
     <h4> H4</h4>
     <h5> H5</h5>
     <h6> H6</h6>
 
-    <p> parrafo - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, labore iusto nam, deserunt animi nostrum sunt veritatis 
+    <p class="azul"> parrafo - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, labore iusto nam, deserunt animi nostrum sunt veritatis 
         voluptatum asperiores architecto officia eveniet quibusdam odio eius delectus aspernatur ab harum vel.</p>
 
     <a href="http://google.com"> enlace </a> <!-- href  "la pagin a la que vamos a redirigir a l usuario"; dentro de la etiqueta podemos tener mas etiquetas -->   
     
-    <p>
+    <p class="parrafo">
         Etiqueta <strong> strong</strong> y etiqueta <em> enfasis</em>
     </p>
+
+    <div class="contenedor">
+        <h4> H4 dentro de contenedor</h4>
+    <div>
+        <h4> H4 dentro de div, que esta dentro del contenedor </h4>    
 
     <h2> Lista desordenada </h2>
     <ul>
@@ -30,7 +38,8 @@
         <li>Carne</li>
     </ul>
 
-    <h2> Lista ordenada</h2>
+    <h2 class="azul"> Lista ordenada</h2>
+    <h2 id="l2" class="azul"> lista desordenada </h2>
     <ol>
         <li> Frutas</li>
         <li> Verduras</li>
@@ -111,14 +120,77 @@
         </div>
 
     </form>
-    <header>
+    <h3 class="color"> Esta es una propiedad de color</h3>
+
+    <p class="texto">  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, labore iusto nam, deserunt animi nostrum sunt veritatis 
+        voluptatum asperiores architecto officia eveniet quibusdam odio eius delectus aspernatur ab harum vel.
+    </p>
+
+    <div class="tamano"> 
+
+    </div>
+    <!--Tablas: <table> con <tr>anidada (filas de tabla) 
+        que contiene anidadas <th> o <td> para el encabezado o las celdas de datos regulares, respectivamente-->
+    <table>
+        <tr>
+            <th>Película</th>
+            <th>Año</th>
+            <th>Calificación</th>
+        </tr>
+        <tr>
+            <td>Up</td>
+            <td>2009</td>
+            <td>PG</td>
+        </tr>
+        <tr>
+            <td>Matrix</td>
+            <td>1999</td>
+            <td>R</td>
+        </tr>
+    </table>
+
+    <div class="background">
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laborum itaque nam culpa ipsa praesentium recusandae totam quibusdam laudantium maiores vero, ullam rerum! Fugiat possimus dicta aspernatur a magni tempora.
+
+        </p>
+    </div>
+
+    <div id="box_model">
+        Texto de prueba
+    </div>
+
+    <!--Videos: <video>  Atributos importantes: src(la ruta del archivo de video) y controls-->
+        <video src="monkey2.mp4" controls></video>
+
+        <!--Si queremos que un video se reproduzca de forma automática en navegadores modernos, debemos incluir autoplay, loop y muted.-->
+        <video src="monkey2.mp4" autoplay loop muted></video>
+
+        <!--tips-->
+        <!--Utiliza letras minúsculas en los nombres, atributos y valores de los elementos.
+            Aplica sangría a los elementos anidados. 
+            Utiliza comillas dobles, no comillas simples o completamente omitidas para almacenar valores de los atributos HTML.
+            ejemplo:-->
+
+            <h1 id="page_title">My First Website!</h1>
+            <p class="sub_title">This is <span class="emphasize">Cool!</span></p>
+
+            <!--Nota: HTML semántico es el uso de marcado HTML para reforzar la semántica, o el significado, de la
+                información en páginas web en lugar de simplemente definir su presentación o apariencia. 
+                ejemplo-->
+            <h1>Bienvenido otra vez</h1>
+            <p> Ha pasado algún tiempo. ¿Qué has hecho últimamente?</p>    
+
+                <!--Atributo alt para imagenes-->
+                <img id="logo" src="images/logo.png" alt="My First Website's logo">
+
+    <!--<header>
 
     </header>
     <section>
     </section>    
     <footer>
 
-    </footer>    
+    </footer>  -->  
 
     
 </body>
