@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\duoc\\Proyectos Portafolio\\libreria"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Fundamentos_de_la_web"
+	}
+}

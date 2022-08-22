@@ -112,3 +112,55 @@ input, textarea{  /*la coma se utiliza  como y, para indicar que mas de un selec
     border: 2px solid black;
     padding: 25px;
 }
+
+.h2_inline{
+    display: inline; /* esto nos permite desplegar los elementos en una sola linea*/
+}
+
+.block {
+    display: block; /*empieza desde el principio de la pagina hata el final del ancho total de la pagina*/
+}
+
+.flag{
+    width: 70px; /*IMPORTANTE!  es una forma de darle prioridad a una prioridad, pero NO es recomendado*/
+    height: 150px ;
+    display: inline-block; /*el inline no toma ancho y el alto, por eso se usa el inlineblock porque toma el widht y el height, pero deja espacios entre bloques*/
+}
+
+.black{
+    background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.div1{
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: plum;
+    display: inline-block;
+}
+.div2{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: lightseagreen;
+    display: inline-block;
+}
+
+.div3{
+    width: 250px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: lightcoral;
+    display: inline-block;
+}
+.vertical_align{
+    vertical-align: top; /*situa los bloques en la parte mas arriba, abajo o centro del contenedor padre*/
+}
